@@ -260,7 +260,7 @@ button:hover {
 }
 
 #home {
-  background-image: url('/img/hero-background.jpg');
+  background-image: url('img/hero-background.jpg');
   background-size: cover;
   width: 100%;
   background-position: bottom;
@@ -679,6 +679,32 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  max-width: 500px;
+}
+
+.contact-info-sub {
+  text-align: left;
+}
+
+.contact-info-socials {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+
+.contact-info-socials i {
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+.contact-info-socials i:hover {
+  color: #FFD700;
+}
+
+.contact-info-socials a {
+  display: flex;
   align-items: center;
 }
 
