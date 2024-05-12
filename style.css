@@ -345,6 +345,7 @@ button:hover {
   gap: 15px;
   justify-content: center;
   margin-top: 15px;
+  padding-bottom: 15px;
   font-size: 23px;
   align-items: center;
 }
@@ -657,7 +658,7 @@ button:hover {
 .contact h1 {
   font-weight: 300;
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .contact p {
@@ -675,16 +676,30 @@ button:hover {
   width: 500px;
 }
 
+.form-wrapper p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper h2,
+.form-wrapper h2 {
+  margin-bottom: 30px;
+}
+
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
   max-width: 500px;
+}
+
+.contact-info p {
+  text-align: left;
+  padding-bottom: 15px;
 }
 
 .contact-info-sub {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .contact-info-socials {
@@ -709,7 +724,6 @@ button:hover {
 }
 
 form {
-  padding: 0 20px;
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
@@ -748,4 +762,36 @@ footer .socials {
 .footer-wrapper p {
   color: #212529;
   font-size: 12px;
+}
+#back-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD700;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 7px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#back-button:hover {
+  cursor: pointer;
+  background-color: #c5a800;
+}
+
+#back-button:active {
+  background-color: #a38b04;
+}
+
+#back-button.show {
+  opacity: 1;
+  visibility: visible;
 }
