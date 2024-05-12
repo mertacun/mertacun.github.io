@@ -1,6 +1,7 @@
 var loader = document.querySelector('.loader');
 var overlay = document.querySelector('.overlay');
 var header = document.querySelector('.header');
+var backBtn = document.querySelector('#back-button');
 
 window.addEventListener("load", function() {
 
@@ -8,6 +9,7 @@ window.addEventListener("load", function() {
     overlay.style.opacity = '0';
     loader.style.display = 'none';
     header.style.display = 'flex';
+    backBtn.style.display = 'flex';
   }, 2000);
 
   this.setTimeout(function() {
@@ -189,3 +191,128 @@ const sections = document.querySelectorAll('section');
   document.querySelectorAll('.nav-menu a').forEach(item => {
     item.addEventListener('click', handleNavItemClick);
   });
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(function(card) {
+      card.addEventListener('click', function() {
+        const popupId = card.querySelector('.bg-overlay').getAttribute('data-popup');
+        const projectDetails = {
+          'project1': {
+            title: "Paula's - Responsive E-Commerce Website",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "Paula's E-Commerce Website is a fully responsive e-commerce platform built with HTML, CSS, and JavaScript. While the website is functional, it's not fully operational, lacking a checkout process and some other functions. However, users can browse products, add them to the cart, and sort them based on various criteria. The shop page fetches products dynamically from a source, providing users with a diverse selection. Additionally, pagination is implemented to enhance the browsing experience, allowing users to navigate through multiple pages of products."
+          },
+          'project2': {
+            title: "Multilingual Customer Feedback Hub",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "This project is a feedback form for a store, but users can display it in whichever language they prefer. Users can write their feedback in any language, and the application translates that feedback into English simultaneously, displaying it on the screen. The English-translated feedback is then submitted to the relevant person or department."
+          },
+          'project3': {
+            title: "Quizzapp - Responsive Quiz Application",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "Quizzapp is a fun general knowledge quiz app. It contains a database of more than 500 questions stored in a questions.js file. The app generates 10 random questions for each round. At the end of the quiz, users receive feedback on their performance out of 10."
+          },
+          'project4': {
+            title: "Red Light Violations in Ottawa",
+            technologies: ["Python"],
+            description: "This Python program displays red light violations in Ottawa for a specific street. Users input a street name, and the program displays the number of violations for each month in the year 2023."
+          },
+          'project5': {
+            title: "Pomorhythm - Pomodoro Timer App",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "Pomorhythm is a pomodoro timer app designed to help users manage their work and break times effectively. It offers standard 25-minute work sessions with 5-minute short breaks and 15-minute long breaks. Users can also toggle a music feature to enhance their productivity."
+          },
+          'project6': {
+            title: "Final Grade Calculator",
+            technologies: ["Python"],
+            description: "This Python application calculates the user's final grade based on the grades they received from assignments and tests. Users input their grades, and the application computes their final grade according to a predefined grading scheme."
+          },
+          'project7': {
+            title: "Mobimovers - Company Website",
+            technologies: ["HTML", "CSS"],
+            description: "Mobimovers is a static company website built using only HTML and CSS. It serves as an online presence for the company, providing information about its services, team members, and contact details."
+          },
+          'project8': {
+            title: "Interest Calculator - Bank Console Application",
+            technologies: ["C Sharp"],
+            description: "This C# console application calculates the user's money in a savings account with interest. Users input their initial deposit amount, interest rate, and the number of years, and the application computes the final amount after the specified time period."
+          },
+          'project9': {
+            title: "Pokedex",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "The Pokedex project is a web application that displays information about various Pokémon species. Users can sort the Pokémon and access detailed information about each one. The data is sourced from a JavaScript file containing information about different Pokémon."
+          },
+          'project10': {
+            title: "Picture of the Day - NASA",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "This application displays a picture taken by NASA for a specific date entered by the user. Along with the image, the application provides a description of the picture, allowing users to learn more about it."
+          },
+          'project11': {
+            title: "Color of the Day",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "This application shows the color associated with a specific date entered by the user. Each day is assigned a unique color, and the application displays this color along with its name and RGB values."
+          },
+          'project12': {
+            title: "Very Simple Calculator",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            description: "The Very Simple Calculator is a basic calculator application with a strict integer mode. Users can perform addition, subtraction, multiplication, and division operations on integer values."
+          }
+
+        };
+        const technologiesHTML = projectDetails[popupId].technologies.map(tech => {
+          const techImagePath = `img/skills/${tech.toLowerCase().replace(/\s/g, '')}logo.png`;
+          return `
+            <div class="technology">
+              <img src="${techImagePath}" alt="${tech}" title="${tech}" class="tech-logo">
+              <span>${tech}</span>
+            </div>
+          `;
+        }).join('');
+  
+        const popupContent = `
+          <div class="popup" id="${popupId}">
+            <span class="close" onclick="closePopup('${popupId}')">&times;</span>
+            <div class="popup-content">
+              <div class="project-image" onclick="showBigImage('${popupId}')">
+                <img src="img/projects/${popupId}.png" alt="${popupId}" class="popup-img">
+              </div>
+              <div class="project-details">
+                <h2>${projectDetails[popupId].title}</h2>
+                <p><strong>Technologies:</strong></p>
+                <div class="technologies">${technologiesHTML}</div>
+                <p><strong>Description:</strong></p>
+                <p>${projectDetails[popupId].description}</p>
+                <a href="https://www.github.com/mertacun"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        `;
+        
+      document.getElementById('popup-container').innerHTML = popupContent;
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById(popupId).style.display = 'block';
+      setTimeout(function() {
+        document.getElementById(popupId).classList.add('show');
+      }, 50);
+    });
+  });
+});
+
+function closePopup(popupId) {
+  document.getElementById(popupId).classList.remove('show');
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById(popupId).style.display = 'none';
+}
+
+function showBigImage(popupId) {
+  const img = document.getElementById(popupId).querySelector('.popup-img');
+  const imgUrl = img.getAttribute('src');
+  window.open(imgUrl, '_blank');
+}
