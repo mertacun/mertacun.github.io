@@ -289,7 +289,10 @@ const sections = document.querySelectorAll('section');
                 <div class="technologies">${technologiesHTML}</div>
                 <p><strong>Description:</strong></p>
                 <p>${projectDetails[popupId].description}</p>
-                <a href="https://www.github.com/mertacun"><i class="fab fa-github"></i></a>
+                <div class="project-links">
+                <a href="https://www.github.com/mertacun"><i class="fab fa-github"></i>Github Repo</a>
+                <a href=""><i class="fas fa-desktop"></i>Live Demo</a>
+                </div>
               </div>
             </div>
           </div>
