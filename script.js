@@ -113,7 +113,7 @@ window.onload = function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   emailjs.init({
-    publicKey: process.env.API_KEY,
+    publicKey: "2SEl0jlVjIke4rPzR",
   });
 
   function sendEmail(event) {
