@@ -217,21 +217,21 @@ const sections = document.querySelectorAll('section');
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "Paula's E-Commerce Website is a fully responsive e-commerce platform built with HTML, CSS, and JavaScript. While the website is functional, it's not fully operational, lacking a checkout process and some other functions. However, users can browse products, add them to the cart, and sort them based on various criteria. The shop page fetches products dynamically from a source, providing users with a diverse selection. Additionally, pagination is implemented to enhance the browsing experience, allowing users to navigate through multiple pages of products.",
             githubLink: "https://github.com/mertacun/paula-s-ecommerce-website",
-            liveDemoLink: "#"
+            liveDemoLink: "https://paula-s-ecommerce-website.vercel.app"
           },
           'project2': {
             title: "Multilingual Customer Feedback Hub",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "This project is a feedback form for a store, but users can display it in whichever language they prefer. Users can write their feedback in any language, and the application translates that feedback into English simultaneously, displaying it on the screen. The English-translated feedback is then submitted to the relevant person or department.",
             githubLink: "https://github.com/mertacun/multilingual-feedback",
-            liveDemoLink: "#"
+            liveDemoLink: "https://multilingual-feedback.vercel.app"
           },
           'project3': {
             title: "Quizzapp - Responsive Quiz Application",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "Quizzapp is a fun general knowledge quiz app. It contains a database of more than 500 questions stored in a questions.js file. The app generates 10 random questions for each round. At the end of the quiz, users receive feedback on their performance out of 10.",
             githubLink: "https://github.com/mertacun/quizzapp",
-            liveDemoLink: "#"
+            liveDemoLink: "https://quizzapp-beta.vercel.app"
           },
           'project4': {
             title: "Red Light Violations in Ottawa",
@@ -245,7 +245,7 @@ const sections = document.querySelectorAll('section');
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "Pomorhythm is a pomodoro timer app designed to help users manage their work and break times effectively. It offers standard 25-minute work sessions with 5-minute short breaks and 15-minute long breaks. Users can also toggle a music feature to enhance their productivity.",
             githubLink: "https://github.com/mertacun/pomodoro-timer",
-            liveDemoLink: "#"
+            liveDemoLink: "https://pomodoro-timer-six-flame.vercel.app"
           },
           'project6': {
             title: "Final Grade Calculator",
@@ -259,7 +259,7 @@ const sections = document.querySelectorAll('section');
             technologies: ["HTML", "CSS"],
             description: "Mobimovers is a static company website built using only HTML and CSS. It serves as an online presence for the company, providing information about its services, team members, and contact details.",
             githubLink: "https://github.com/mertacun/mobimovers-company-page",
-            liveDemoLink: "#"
+            liveDemoLink: "https://mobimovers-company-page.vercel.app"
           },
           'project8': {
             title: "Interest Calculator - Bank Console Application",
@@ -273,21 +273,21 @@ const sections = document.querySelectorAll('section');
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "The Pokedex project is a web application that displays information about various Pokémon species. Users can sort the Pokémon and access detailed information about each one. The data is sourced from a JavaScript file containing information about different Pokémon.",
             githubLink: "https://github.com/mertacun/pokedex",
-            liveDemoLink: "#"
+            liveDemoLink: "https://pokedex-nine-sand.vercel.app"
           },
           'project10': {
             title: "Picture of the Day - NASA",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "This application displays a picture taken by NASA for a specific date entered by the user. Along with the image, the application provides a description of the picture, allowing users to learn more about it.",
             githubLink: "https://github.com/mertacun/nasa-picture-of-the-day",
-            liveDemoLink: "#"
+            liveDemoLink: "https://nasa-picture-of-the-day-seven.vercel.app"
           },
           'project11': {
             title: "Color of the Day",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "This application shows the color associated with a specific date entered by the user. Each day is assigned a unique color, and the application displays this color along with its name and RGB values.",
             githubLink: "https://github.com/mertacun/color-of-the-day",
-            liveDemoLink: "#"
+            liveDemoLink: "https://color-of-the-day.vercel.app"
           },
           'project12': {
             title: "Very Simple Calculator",
