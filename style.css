@@ -240,7 +240,7 @@ button:hover {
   .navbar button {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
-    padding: 5% 5% 5% 100%;
+    padding: 5% 8% 5% 100%;
     border: none;
 }
 
@@ -385,6 +385,16 @@ button:hover {
   }
   .about-info {
     width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero-info {
+    height: 50%;
+    gap: 30px;
+  }
+  .about-info {
+    width: 400px;
   }
 }
 .about {
@@ -840,6 +850,11 @@ button:hover {
   }
   .popup-content {
     flex-direction: column;
+}
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 

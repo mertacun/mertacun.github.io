@@ -221,84 +221,84 @@ const sections = document.querySelectorAll('section');
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "Paula's E-Commerce Website is a fully responsive e-commerce platform built with HTML, CSS, and JavaScript. While the website is functional, it's not fully operational, lacking a checkout process and some other functions. However, users can browse products, add them to the cart, and sort them based on various criteria. The shop page fetches products dynamically from a source, providing users with a diverse selection. Additionally, pagination is implemented to enhance the browsing experience, allowing users to navigate through multiple pages of products.",
             githubLink: "https://github.com/mertacun/paula-s-ecommerce-website",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project2': {
             title: "Multilingual Customer Feedback Hub",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "This project is a feedback form for a store, but users can display it in whichever language they prefer. Users can write their feedback in any language, and the application translates that feedback into English simultaneously, displaying it on the screen. The English-translated feedback is then submitted to the relevant person or department.",
             githubLink: "https://github.com/mertacun/multilingual-feedback",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project3': {
             title: "Quizzapp - Responsive Quiz Application",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "Quizzapp is a fun general knowledge quiz app. It contains a database of more than 500 questions stored in a questions.js file. The app generates 10 random questions for each round. At the end of the quiz, users receive feedback on their performance out of 10.",
             githubLink: "https://github.com/mertacun/quizzapp",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project4': {
             title: "Red Light Violations in Ottawa",
             technologies: ["Python"],
             description: "This Python program displays red light violations in Ottawa for a specific street. Users input a street name, and the program displays the number of violations for each month in the year 2023.",
             githubLink: "https://github.com/mertacun/Ottawa-red-light-camera-violations",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project5': {
             title: "Pomorhythm - Pomodoro Timer App",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "Pomorhythm is a pomodoro timer app designed to help users manage their work and break times effectively. It offers standard 25-minute work sessions with 5-minute short breaks and 15-minute long breaks. Users can also toggle a music feature to enhance their productivity.",
             githubLink: "https://github.com/mertacun/pomodoro-timer",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project6': {
             title: "Final Grade Calculator",
             technologies: ["Python"],
             description: "This Python application calculates the user's final grade based on the grades they received from assignments and tests. Users input their grades, and the application computes their final grade according to a predefined grading scheme.",
             githubLink: "https://github.com/mertacun/final-grade-calculator",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project7': {
             title: "Mobimovers - Company Website",
             technologies: ["HTML", "CSS"],
             description: "Mobimovers is a static company website built using only HTML and CSS. It serves as an online presence for the company, providing information about its services, team members, and contact details.",
             githubLink: "https://github.com/mertacun/mobimovers-company-page",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project8': {
             title: "Interest Calculator - Bank Console Application",
             technologies: ["C Sharp"],
             description: "This C# console application calculates the user's money in a savings account with interest. Users input their initial deposit amount, interest rate, and the number of years, and the application computes the final amount after the specified time period.",
             githubLink: "https://github.com/mertacun/saving-accounts",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project9': {
             title: "Pokedex",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "The Pokedex project is a web application that displays information about various Pokémon species. Users can sort the Pokémon and access detailed information about each one. The data is sourced from a JavaScript file containing information about different Pokémon.",
             githubLink: "https://github.com/mertacun/pokedex",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project10': {
             title: "Picture of the Day - NASA",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "This application displays a picture taken by NASA for a specific date entered by the user. Along with the image, the application provides a description of the picture, allowing users to learn more about it.",
             githubLink: "https://github.com/mertacun/nasa-picture-of-the-day",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project11': {
             title: "Color of the Day",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "This application shows the color associated with a specific date entered by the user. Each day is assigned a unique color, and the application displays this color along with its name and RGB values.",
             githubLink: "https://github.com/mertacun/color-of-the-day",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           },
           'project12': {
             title: "Very Simple Calculator",
             technologies: ["HTML", "CSS", "JavaScript"],
             description: "The Very Simple Calculator is a basic calculator application with a strict integer mode. Users can perform addition, subtraction, multiplication, and division operations on integer values.",
             githubLink: "https://github.com/mertacun/simple-calculator",
-            liveDemoLink: ""
+            liveDemoLink: "#"
           }
 
         };
@@ -326,8 +326,8 @@ const sections = document.querySelectorAll('section');
               <p><strong>Description:</strong></p>
               <p>${projectDetails[popupId].description}</p>
               <div class="project-links">
-                <a href="${projectDetails[popupId].githubLink}"><i class="fab fa-github"></i>Github Repo</a>
-                <a href="${projectDetails[popupId].liveDemoLink}"><i class="fas fa-desktop"></i>Live Demo</a>
+                <a href="${projectDetails[popupId].githubLink}" target="_blank"><i class="fab fa-github"></i>Github Repo</a>
+                <a href="${projectDetails[popupId].liveDemoLink}" target="_blank"><i class="fas fa-desktop"></i>Live Demo</a>
               </div>
             </div>
           </div>
