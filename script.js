@@ -111,10 +111,9 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-
 document.addEventListener("DOMContentLoaded", function() {
   emailjs.init({
-      publicKey: "G-CvwdhDRJDVNeFgI",
+    publicKey: config.emailjs.publicKey,
   });
 
   function sendEmail(event) {
