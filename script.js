@@ -113,7 +113,7 @@ window.onload = function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   emailjs.init({
-    publicKey: config.emailjs.publicKey,
+    publicKey: process.env.API_KEY,
   });
 
   function sendEmail(event) {
@@ -202,9 +202,6 @@ const sections = document.querySelectorAll('section');
   document.querySelectorAll('.nav-menu a').forEach(item => {
     item.addEventListener('click', handleNavItemClick);
   });
-
-
-
 
 
 
