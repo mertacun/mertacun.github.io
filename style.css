@@ -388,7 +388,7 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1024px) and (max-width: 1100px) {
   .hero-info {
     height: 50%;
     gap: 30px;
@@ -397,6 +397,24 @@ button:hover {
     width: 400px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .hero-info {
+    padding: 10px;
+    gap: 10px;
+  }
+  .hero-info h2 {
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 5px;
+  }
+  .hero-info p {
+    padding-top: 10px;
+    margin: 5px 10px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
 .about {
   padding: 2rem 0;
   background-color: #fff;
