@@ -17,6 +17,14 @@ window.addEventListener("load", function() {
   }, 2500);
 });
 
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var iframe = document.getElementById('figma-iframe');
+    iframe.src = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FzY9t29dk0T2jjxk1nOhwkP%2FWireframes%3Ftype%3Ddesign%26node-id%3D38%253A784%26mode%3Ddesign%26t%3DvsGi7Zu5y48xmYL7-1";
+  }, 5000);
+});
+
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = navMenu.querySelectorAll('li');
