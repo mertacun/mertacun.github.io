@@ -24,10 +24,9 @@ window.addEventListener('load', function() {
   }, 5000);
 });
 
-
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const navLinks = navMenu.querySelectorAll('li');
+const navLinks = navMenu.querySelectorAll('li a');
 const body = document.body;
 
 window.addEventListener('scroll', function() {
@@ -39,8 +38,7 @@ window.addEventListener('scroll', function() {
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-
-hamburger.addEventListener("click", () => {
+function toggleMenu() {
   navMenu.classList.toggle('active');
   hamburger.classList.toggle('active');
 
@@ -49,7 +47,10 @@ hamburger.addEventListener("click", () => {
   } else {
     body.style.overflow = 'auto';
   }
-});
+}
+
+hamburger.addEventListener("click", toggleMenu);
+hamburger.addEventListener("touchstart", toggleMenu);
 
 function closeMenu() {
   hamburger.classList.remove("active");
@@ -59,8 +60,8 @@ function closeMenu() {
 
 navLinks.forEach((link) => {
   link.addEventListener('click', closeMenu);
+  link.addEventListener('touchstart', closeMenu);
 });
-
 
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
