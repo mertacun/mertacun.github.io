@@ -381,10 +381,13 @@ button:hover {
     height: 50%;
   }
   .about-image img {
-    height: 250px;
+    width: 350px;
   }
   .about-info {
     width: 250px;
+  }
+  .about-inner {
+      display: flex!important;
   }
 }
 
@@ -873,6 +876,9 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.popup {
+  max-height: 70vh;
 }
 }
 
