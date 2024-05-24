@@ -361,6 +361,7 @@ const sections = document.querySelectorAll('section');
       document.getElementById('popup-container').innerHTML = popupContent;
       document.getElementById('overlay').style.display = 'block';
       document.getElementById(popupId).style.display = 'block';
+      document.body.style.overflow = 'hidden';
       setTimeout(function() {
         document.getElementById(popupId).classList.add('show');
       }, 50);
@@ -372,6 +373,7 @@ function closePopup(popupId) {
   document.getElementById(popupId).classList.remove('show');
   document.getElementById('overlay').style.display = 'none';
   document.getElementById(popupId).style.display = 'none';
+  document.body.style.overflow = 'auto'; 
 }
 
 function showBigImage(popupId) {
