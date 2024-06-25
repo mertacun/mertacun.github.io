@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
     <title>Mert Acun</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
   <body>
     <div class="overlay"></div>
@@ -23,7 +26,6 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-
         <button class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -31,7 +33,7 @@
         </button>
       </div>
     </header>
-
+  
     <section id="home">
       <div class="container hero">
         <div class="hero-info">
@@ -53,7 +55,6 @@
             <a href="#contact">
               <button id="contact-btn">Contact<i class="fas fa-globe"></i></button>
             </a>
-
           </div>
           <div class="socials">
             <a href="https://www.github.com/mertacun" target="_blank"><i class="fab fa-github"></i></a>
@@ -61,12 +62,11 @@
             <a href="https://www.facebook.com/mert.acun" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/merthalilacun" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.algonquincollege.com/sat/program/web-development-internet-applications" target="_blank"><i class="icon"></i></a>
-        </div>
-        
+          </div>
         </div>
       </div>
     </section>
-
+  
     <section id="about" class="about">
       <h2 class="section-title">A Little Bit About Me</h2>
       <div class="container about-inner">
@@ -102,476 +102,315 @@
           </div>
         </div>
         <div class="about-image">
-          <img src="img/profile-photo.png" alt="Mert Acun" />
+          <img src="img/profile-photo.png" alt="Mert Acun" loading="lazy">
         </div>
-    </section>
-
-    <section class="skillset-container" id="skillset">
-      <h2>My Skillset</h2>
-      <div class="skillset-section">
+      </section>
+  
+      <section class="skillset-container" id="skillset">
+        <h2>My Skillset</h2>
+        <div class="skillset-section">
           <ul class="skillset-wrap">
             <li class="skillset-box">
-              <img src="img/skills/htmllogo.png" alt="Html"/>
+              <img src="img/skills/htmllogo.png" alt="Html" loading="lazy">
               <span class="skillname">HTML</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/csslogo.png" alt="css"/>
+              <img src="img/skills/csslogo.png" alt="css" loading="lazy">
               <span class="skillname">CSS</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/javascriptlogo.png" alt="js"/>
+              <img src="img/skills/javascriptlogo.png" alt="js" loading="lazy">
               <span class="skillname">Javascript</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/bootstraplogo.png" alt="bootstrap"/>
+              <img src="img/skills/bootstraplogo.png" alt="bootstrap" loading="lazy">
               <span class="skillname">Bootstrap</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/csharplogo.png" alt="csharp"/>
+              <img src="img/skills/csharplogo.png" alt="csharp" loading="lazy">
               <span class="skillname">C Sharp</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/githublogo.png" alt="github"/>
+              <img src="img/skills/githublogo.png" alt="github" loading="lazy">
               <span class="skillname">Github</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/pythonlogo.png" alt="python"/>
+              <img src="img/skills/pythonlogo.png" alt="python" loading="lazy">
               <span class="skillname">Python</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/phplogo.png" alt="php"/>
+              <img src="img/skills/phplogo.png" alt="php" loading="lazy">
               <span class="skillname">PHP</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/adobephotoshoplogo.png" alt="photoshop"/>
+              <img src="img/skills/adobephotoshoplogo.png" alt="photoshop" loading="lazy">
               <span class="skillname">Adobe Photoshop</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/figmalogo.png" alt="figma"/>
+              <img src="img/skills/figmalogo.png" alt="figma" loading="lazy">
               <span class="skillname">Figma</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/adobeillustratorlogo.png" alt="illustrator"/>
+              <img src="img/skills/adobeillustratorlogo.png" alt="illustrator" loading="lazy">
               <span class="skillname">Adobe illustrator</span>
             </li>
-
             <li class="skillset-box">
-              <img src="img/skills/mysqllogo.png" alt="mysql"/>
+              <img src="img/skills/mysqllogo.png" alt="mysql" loading="lazy">
               <span class="skillname">MySQL</span>
             </li>
-            
             <li class="skillset-box">
-              <img src="img/skills/linuxlogo.png" alt="linux"/>
+              <img src="img/skills/linuxlogo.png" alt="linux" loading="lazy">
               <span class="skillname">Linux</span>
             </li>
           </ul>
-      </div>
-      <p class="skills-note">The skills listed above represent my familiarity with various programming languages, 
-        frameworks, and design tools. While I have experience using all of them, my proficiency 
-        levels may vary. I am continuously learning and exploring new features and techniques.</p>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-      <h2 class="section-title">Recent Projects</h2>
-      <div class="container">
-        <div class="projects">
-          <div class="project-images">
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
+        </div>
+        <p class="skills-note">The skills listed above represent my familiarity with various programming languages, 
+          frameworks, and design tools. While I have experience using all of them, my proficiency 
+          levels may vary. I am continuously learning and exploring new features and techniques.</p>
+      </section>
+  
+      <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="container">
+          <div class="projects">
+            <div class="project-images">
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project1"></div>
+                  <img src="img/projects/project1.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project1.png" alt="project-image" class="main-image" loading="lazy">
                 </div>
-                <div class="bg-overlay" data-popup="project1"></div>
-                <img
-                  src="img/projects/project1.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project1.png"
-                  alt="project-image"
-                  class="main-image"
-                />
+                <div class="content">
+                  <h4>Paula's - Responsive E-Commerce Website</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
               </div>
-
-              <div class="content">
-                <h4>Paula's - Responsive E-Commerce Website</h4>
-                <span>HTML - CSS - Javascript</span>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project2"></div>
+                  <img src="img/projects/project2.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project2.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Multilingual Customer Feedback Hub</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project3"></div>
+                  <img src="img/projects/project3.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project3.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Quizzapp - Responsive Quiz Application</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project4"></div>
+                  <img src="img/projects/project4.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project4.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Red Light Violations in Ottawa</h4>
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project5"></div>
+                  <img src="img/projects/project5.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project5.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Pomorhythm - Pomodoro Timer App</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project6"></div>
+                  <img src="img/projects/project6.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project6.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Final Grade Calculator</h4>
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project7"></div>
+                  <img src="img/projects/project7.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project7.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Mobimovers - Moving Company Website</h4>
+                  <span>HTML - CSS</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project8"></div>
+                  <img src="img/projects/project8.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project8.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Interest Calculator - Bank Console Application</h4>
+                  <span>C#</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project9"></div>
+                  <img src="img/projects/project9.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project9.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Pokedex</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project10"></div>
+                  <img src="img/projects/project10.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project10.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Picture of the Day - NASA</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project11"></div>
+                  <img src="img/projects/project11.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project11.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Color of the Day</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
+              </div>
+              <div class="project">
+                <div class="card">
+                  <div class="overlay">
+                    <div class="hover-text">Click Here For Details</div>
+                  </div>
+                  <div class="bg-overlay" data-popup="project12"></div>
+                  <img src="img/projects/project12.png" alt="project-image" class="overlay-image" loading="lazy">
+                  <img src="img/projects/project12.png" alt="project-image" class="main-image" loading="lazy">
+                </div>
+                <div class="content">
+                  <h4>Very Simple Calculator</h4>
+                  <span>HTML - CSS - Javascript</span>
+                </div>
               </div>
             </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project2"></div>
-                <img
-                  src="img/projects/project2.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project2.png"
-                  alt="project-image"
-                  class="main-image"
-                />
-                
-              </div>
-
-              <div class="content">
-                <h4>Multilingual Customer Feedback Hub</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project3"></div>
-                <img
-                  src="img/projects/project3.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project3.png"
-                  alt="project-image"
-                  class="main-image"
-                />
-              </div>
-              <div class="content">
-                <h4>Quizzapp - Responsive Quiz Application</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project4"></div>
-                <img
-                  src="img/projects/project4.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project4.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Red Light Violations in Ottawa</h4>
-                <span>Python</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project5"></div>
-                <img
-                  src="img/projects/project5.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project5.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Pomorhythm - Pomodoro Timer App</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project6"></div>
-                <img
-                  src="img/projects/project6.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project6.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Final Grade Calculator</h4>
-                <span>Python</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project7"></div>
-                <img
-                  src="img/projects/project7.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project7.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Mobimovers - Moving Company Website</h4>
-                <span>HTML - CSS</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project8"></div>
-                <img
-                  src="img/projects/project8.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project8.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Interest Calculator - Bank Console Application</h4>
-                <span>C#</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project9"></div>
-                <img
-                  src="img/projects/project9.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project9.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Pokedex</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project10"></div>
-                <img
-                  src="img/projects/project10.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project10.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Picture of the Day - NASA</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project11"></div>
-                <img
-                  src="img/projects/project11.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project11.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Color of the Day</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-            <div class="project">
-              <div class="card">
-                <div class="overlay">
-                  <div class="hover-text">Click Here For Details</div>
-                </div>
-                <div class="bg-overlay" data-popup="project12"></div>
-                <img
-                  src="img/projects/project12.png"
-                  alt="project-image"
-                  class="overlay-image"
-                />
-                <img
-                  src="img/projects/project12.png"
-                  alt="project-image"
-                  
-                  class="main-image"
-                />
-              </div>
-
-              <div class="content">
-                <h4>Very Simple Calculator</h4>
-                <span>HTML - CSS - Javascript</span>
-              </div>
-            </div>
-
           </div>
         </div>
-      </div>
-      <div id="overlay"></div>
-      <div id="popup-container"></div>
-    </section>
-    <section id="figma" class="figma">
-      <h2 class="section-title">My Recent Figma Project</h2>
-      <iframe id="figma-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" loading="lazy" allowfullscreen></iframe>
-      <div class="figma-desc">
-      <h3>cineBro - Movie Database Website</h3>
-      <p>The cineBro Movie Database Website is a modern and user-friendly platform designed to 
-        showcase a vast collection of movies. Featuring a sleek loader animation, a secure login 
-        page, dynamic hero slider, interactive carousel, and detailed movie pages with trailers, 
-        this project aims to provide users with an immersive movie exploration experience.</p>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <h1>Get in Touch for <strong>Creative Collaboration!</strong></h1>
-      <div class="contact-wrapper">
-        <div class="form-wrapper">
-          <h2>Fill Out The Form Below</h2>
-      <p>I'm eager to hear from you! Expect a response within 24 hours. Thank you for reaching out!</p>
-      <div>
-        <form id="contact-form">
-          <div class="form-row">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form-input"
-              placeholder="Your Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form-input"
-              placeholder="Your Email"
-              required
-            />
+        <div id="overlay"></div>
+        <div id="popup-container"></div>
+      </section>
+  
+      <section id="figma" class="figma">
+        <h2 class="section-title">My Recent Figma Project</h2>
+        <iframe id="figma-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" loading="lazy" allowfullscreen></iframe>
+        <div class="figma-desc">
+          <h3>cineBro - Movie Database Website</h3>
+          <p>The cineBro Movie Database Website is a modern and user-friendly platform designed to 
+            showcase a vast collection of movies. Featuring a sleek loader animation, a secure login 
+            page, dynamic hero slider, interactive carousel, and detailed movie pages with trailers, 
+            this project aims to provide users with an immersive movie exploration experience.</p>
+        </div>
+      </section>
+  
+      <section class="contact" id="contact">
+        <h1>Get in Touch for <strong>Creative Collaboration!</strong></h1>
+        <div class="contact-wrapper">
+          <div class="form-wrapper">
+            <h2>Fill Out The Form Below</h2>
+            <p>I'm eager to hear from you! Expect a response within 24 hours. Thank you for reaching out!</p>
+            <div>
+              <form id="contact-form">
+                <div class="form-row">
+                  <input type="text" name="name" id="name" class="form-input" placeholder="Your Name" required>
+                  <input type="email" name="email" id="email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" id="message" rows="6" class="form-input" required placeholder="Share your thoughts or inquiries here..." style="resize: none"></textarea>
+                <div class="form-button">
+                  <button type="submit">Send Your Message</button>
+                </div>
+              </form>
+            </div>
           </div>
-    
-          <textarea
-            name="message"
-            id="message"
-            rows="6"
-            class="form-input"
-            required
-            placeholder="Share your thoughts or inquiries here..."
-            style="resize: none"
-          ></textarea>
-    
-          <div class="form-button">
-            <button type="submit">Send Your Message</button>
+          <h3>OR</h3>
+          <div class="contact-info">
+            <h2>Reach Out Directly</h2>
+            <p>Don't hesitate to get in touch! I'm excited to hear from you whether it's about 
+              collaboration opportunities, feedback on my work, or just to chat.</p>
+            <div class="contact-info-sub">
+              <p><strong>Email:</strong> <a href="mailto:acun0008@algonquinlive.com">acun0008@algonquinlive.com</a></p>
+              <div class="contact-info-socials">
+                <a href="https://www.linkedin.com/in/mert-acun" target="_blank"><i class="fab fa-linkedin"></i> @mert-acun</a>
+                <a href="https://www.facebook.com/mert.acun" target="_blank"><i class="fab fa-facebook"></i> @mert.acun</a>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-      </div>
-      <h3>OR</h3>
-      <div class="contact-info">
-        <h2>Reach Out Directly</h2>
-        <p>Don't hesitate to get in touch! I'm excited to hear from you whether it's about 
-          collaboration opportunities, feedback on my work, or just to chat.</p>
-        <div class="contact-info-sub">
-
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:acun0008@algonquinlive.com">acun0008@algonquinlive.com</a>
-        </p>
-        <div class="contact-info-socials">
-        <a href="https://www.linkedin.com/in/mert-acun" target="_blank"><i class="fab fa-linkedin"></i> @mert-acun</a>
-        <a href="https://www.facebook.com/mert.acun" target="_blank"><i class="fab fa-facebook"></i> @mert.acun</a>
-      </div>
-      </div>
-    </div>
-    </div>
-    </section>
-    
-    <footer>
-      <div class="footer-wrapper">
-        
-        <div class="socials">
-          <a href="https://www.github.com/mertacun" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/mert-acun" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/mert.acun" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/merthalilacun" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.algonquincollege.com/sat/program/web-development-internet-applications" target="_blank"><i class="icon"></i></a>
-      </div>
-        <p>&copy; 2024. All rights reserved.</p>
-        <p>Made with <span style="color: #e25555;">❤</span> in Ottawa</p>
-      </div>
-    </footer>
-    <a href="#home" id="back-button">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </body>
+        </div>
+      </section>
+  
+      <footer>
+        <div class="footer-wrapper">
+          <div class="socials">
+            <a href="https://www.github.com/mertacun" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mert-acun" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/mert.acun" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/merthalilacun" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.algonquincollege.com/sat/program/web-development-internet-applications" target="_blank"><i class="icon"></i></a>
+          </div>
+          <p>&copy; 2024. All rights reserved.</p>
+          <p>Made with <span style="color: #e25555;">❤</span> in Ottawa</p>
+        </div>
+      </footer>
+      <a href="#home" id="back-button">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </body>
 </html>
