@@ -800,7 +800,8 @@ button:hover {
   font-size: 25px;
 }
 
-.project-details a {
+.project-details a,
+.project-details span {
   display: flex;
   flex-direction: column;
   align-items: center;
