@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'project2': {
       title: "Multilingual Customer Feedback Hub",
       technologies: ["HTML", "CSS", "JavaScript"],
-      description: "This project is a feedback form for a store, but users can display it in whichever language they prefer. Users can write their feedback in any language, and the application translates that feedback into English simultaneously, displaying it on the screen. The English-translated feedback is then submitted to the relevant person or department.",
+      description: "This project is a feedback form for a store, but users can display it in whichever language they prefer. Users can write their feedback in any language, and the application translates that feedback into English simultaneously, displaying it on the screen. The English-translated feedback is then submitted to the relevant person or department. <br><br><strong>Note:</strong> Translation functionality is currently unavailable as a Google API subscription is required.",
       githubLink: "https://github.com/mertacun/multilingual-feedback",
       liveDemoLink: "https://multilingual-feedback.vercel.app",
       disabled: false
@@ -328,7 +328,15 @@ document.addEventListener('DOMContentLoaded', function() {
       githubLink: "https://github.com/mertacun/simple-calculator",
       liveDemoLink: "#",
       disabled: true
-    }
+    },
+    'project13': {
+  title: "Personal Finance Tracker",
+  technologies: ["PHP", "Laravel", "MySQL"],
+  description: "The Personal Finance Tracker is a web application that helps users manage their finances. Users can log expenses, view spending summaries, and analyze their spending trends. The application features user authentication, expense logging, and database integration to ensure persistent storage of financial data. <br><br><strong>Note:</strong> The live demo is built with HTML, CSS, and JavaScript only and does not include backend functionality.",
+  githubLink: "https://github.com/mertacun/personal-finance-tracker-php",
+  liveDemoLink: "https://personal-finance-tracker-azure.vercel.app",
+  disabled: false
+}
   };
 
   cards.forEach(function(card) {
